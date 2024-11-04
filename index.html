@@ -7,11 +7,31 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/8a30de6bf5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div class="header">
+      <div class="icon-container">
+        <div class="dropdown">
+          <a href="#" onclick="setLenguage('en')" id="language-toggle"><img src="images/flags/en.ico" alt=""></a>
+          <div class="dropdown-content">
+            <a href="#" onclick="setLenguage('es')"><img src="images/flags/es.ico" alt=""></a>
+            <a href="#" onclick="setLenguage('cat')"><img src="images/flags/cat.ico" alt=""></a>
+          </div>
+        </div>
+        <i class="fa-solid fa-moon" id="mode-toggle" style="color: #000000;"></i>
+      </div>
+    </div>
     <div class="container">
       <div class="logo">
         <img src="images/poksy-bg.png" alt="poksy-logo" class="smaller-image" />
+        <p id="logo-text">Pau Xavier Carrera Nonales</p>
+        <div class="picture-div">
+          <div class="profile-picture"></div>
+        </div>
       </div>
       <nav>
         <ul>
@@ -20,35 +40,35 @@
               ><img
                 src="images/projects1.png"
                 alt="projects button"
-                onmouseover="changeImage(this, 'images/projects1.png')"
-                onmouseout="changeImage(this, 'images/projects2.png')"
+                onmouseover="changeImage(this, 'images/projects2.png')"
+                onmouseout="changeImage(this, 'images/projects1.png')"
             /></a>
           </li>
           <li>
             <a href="pages/about.html"
               ><img
-                src="images/about me.png"
+                src="images/aboutme1.png"
                 alt="about me button"
-                onmouseover="changeImage(this, 'images/about me.gif')"
-                onmouseout="changeImage(this, 'images/about me.png')"
+                onmouseover="changeImage(this, 'images/aboutme2.png')"
+                onmouseout="changeImage(this, 'images/aboutme1.png')"
             /></a>
           </li>
           <li>
             <a href="pages/media.html"
               ><img
-                src="images/media.png"
+                src="images/media1.png"
                 alt="media button"
-                onmouseover="changeImage(this, 'images/media.gif')"
-                onmouseout="changeImage(this, 'images/media.png')"
+                onmouseover="changeImage(this, 'images/media2.png')"
+                onmouseout="changeImage(this, 'images/media1.png')"
             /></a>
           </li>
           <li>
             <a href="pages/contact.html"
               ><img
-                src="images/contact.png"
+                src="images/contact1.png"
                 alt="contact button"
-                onmouseover="changeImage(this, 'images/contact.gif')"
-                onmouseout="changeImage(this, 'images/contact.png')"
+                onmouseover="changeImage(this, 'images/contact2.png')"
+                onmouseout="changeImage(this, 'images/contact1.png')"
             /></a>
           </li>
         </ul>
