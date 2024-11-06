@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +19,14 @@ body {
   align-items: center;
 }
 
+
+/* Navigation */
+#language-toggle {
+  padding: 0 3px 0 10px;
+}
+
 .icon-container {
-  display: flex;
+    display: flex;
   gap: 15px;
 }
 
@@ -42,10 +52,6 @@ body {
   background-color: white;
 }
 
-#language-toggle {
-  padding: 0 3px 0 10px;
-}
-
 .dropdown-content a {
   color: black;
   padding: 1px 10px;
@@ -67,14 +73,18 @@ body {
 
 /* Main container */
 .container {
+  padding-bottom: 4rem;
   justify-content: center;
   text-align: center;
   display: flex;
   align-items: center; 
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
-/* Background logo */
+#main {
+  margin-bottom: 70px;
+}
+
 .logo {
   margin-right: 50px; 
 }
@@ -107,12 +117,6 @@ body {
   width: 100%;
 }
 
-.picture-div {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .profile-picture {
   margin-right: 15px;
   width: 200px;
@@ -128,7 +132,8 @@ body {
   object-fit: cover;
 }
 
-/* Navigation */
+
+/* Menu */
 nav {
   display: flex;
   flex-direction: column;
@@ -156,4 +161,31 @@ nav ul li a {
 nav ul li a img {
   height: 100px;
   width: auto;
+}
+
+/* CON */
+.subtitle {
+  width: 70%;
+  font-size: 80px;
+  display: block;
+  padding-top: 10px;
+  padding-left: 3rem;
+}
+
+.project-box {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 2rem;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #b0b0b0;
+  font-size: 24px;
+  color: #555;
+}
+
+#projects{
+  display: block;
 }

@@ -10,3 +10,11 @@ document.getElementById('language-toggle').onclick = function() {
 function setLanguage(language){
   alert('Idioma cambiado a: ${language}');
 }
+
+
+document.querySelector('a[href="#projects"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#projects').scrollIntoView({
+    behavior: 'smooth',
+  });
+});
