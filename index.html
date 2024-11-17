@@ -4,30 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>poksy | home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script
       src="https://kit.fontawesome.com/8a30de6bf5.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Header -->
     <div class="header">
       <div class="icon-container">
         <div class="dropdown">
-          <a href="#" onclick="setLenguage('en')" id="language-toggle"><img src="images/flags/en.ico" alt=""></a>
+          <a href="#" onclick="setLenguage('en')" id="language-toggle"
+            ><img src="images/flags/en.ico" alt=""
+          /></a>
           <div class="dropdown-content">
-            <a href="#" onclick="setLenguage('es')"><img src="images/flags/es.ico" alt=""></a>
-            <a href="#" onclick="setLenguage('cat')"><img src="images/flags/cat.ico" alt=""></a>
+            <a href="#" onclick="setLenguage('es')"
+              ><img src="images/flags/es.ico" alt=""
+            /></a>
+            <a href="#" onclick="setLenguage('cat')"
+              ><img src="images/flags/cat.ico" alt=""
+            /></a>
           </div>
         </div>
-        <i class="fa-solid fa-moon" id="mode-toggle" style="color: #000000;"></i>
+        <i class="fa-solid fa-moon" id="mode-toggle" style="color: #000000"></i>
       </div>
     </div>
-    
-    <div  id="main" class="container">
-      <div class="profile-picture"><img src="images/profile-picture.jpg" alt=""></div>
+
+    <!-- Main Content -->
+    <div id="main" class="container">
+      <div class="profile-picture">
+        <img src="images/profile-picture.jpg" alt="" />
+      </div>
       <div class="logo">
         <p class="text-logo1">Hey,i'm</p>
         <img src="images/poksy-bg.png" alt="poksy-logo" class="smaller-image" />
@@ -36,55 +44,74 @@
       <nav>
         <ul>
           <li>
-            <a href="#projects"
-              ><img
-                src="images/projects1.png"
-                alt="projects button"
-                onmouseover="changeImage(this, 'images/projects2.png')"
-                onmouseout="changeImage(this, 'images/projects1.png')"
-            /></a>
-          </li>
-          <li>
             <a href="pages/about.html"
               ><img
-                src="images/aboutme1.png"
+                src="images/nav/aboutme1.png"
                 alt="about me button"
-                onmouseover="changeImage(this, 'images/aboutme2.png')"
-                onmouseout="changeImage(this, 'images/aboutme1.png')"
+                onmouseover="changeImage(this, 'images/nav/aboutme2.png')"
+                onmouseout="changeImage(this, 'images/nav/aboutme1.png')"
             /></a>
           </li>
           <li>
             <a href="pages/media.html"
               ><img
-                src="images/media1.png"
+                src="images/nav/media1.png"
                 alt="media button"
-                onmouseover="changeImage(this, 'images/media2.png')"
-                onmouseout="changeImage(this, 'images/media1.png')"
+                onmouseover="changeImage(this, 'images/nav/media2.png')"
+                onmouseout="changeImage(this, 'images/nav/media1.png')"
+            /></a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><img
+                src="images/nav/projects1.png"
+                alt="projects button"
+                onmouseover="changeImage(this, 'images/nav/projects2.png')"
+                onmouseout="changeImage(this, 'images/nav/projects1.png')"
             /></a>
           </li>
           <li>
             <a href="pages/contact.html"
               ><img
-                src="images/contact1.png"
+                src="images/nav/contact1.png"
                 alt="contact button"
-                onmouseover="changeImage(this, 'images/contact2.png')"
-                onmouseout="changeImage(this, 'images/contact1.png')"
+                onmouseover="changeImage(this, 'images/nav/contact2.png')"
+                onmouseout="changeImage(this, 'images/nav/contact1.png')"
             /></a>
           </li>
         </ul>
       </nav>
     </div>
-    <div id="projects" class="container">
-      <p class="text-logo2 subtitle">PROJECTS</p>
-      <div class="container">
-        <div class="project-box">
-          <p>WIP...</p>
-        </div>
-        <div class="project-box">
-          <p>WIP...</p>
-        </div>
+    
+    <!-- About Me Section -->
+    <div id="about-me" class="container padding-top-60">
+      <div class="about-content">
+        <h2 class="about-title text-center">About Me</h2>
+        <p class="about-text">
+          Hola, soy [Tu Nombre], un desarrollador full-stack apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia en varias tecnologías como JavaScript, React, Node.js, y más. Mi objetivo es crear aplicaciones que mejoren la experiencia del usuario y ayuden a resolver problemas reales.
+        </p>
       </div>
     </div>
-    <script src="script.js"></script>
+    
+
+    <!-- Experience Section -->
+    <div id="experience" class="container">
+
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container">
+      <div class="underline-text">
+        <p class="text-logo2 subtitle">PROJECTS</p>
+      </div>
+      <div class="projects-container" id="projects-container"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

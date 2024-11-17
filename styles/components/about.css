@@ -1,0 +1,25 @@
+#about-me {
+  background-color: var(--background-color);
+  padding: var(--padding-top-60);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--margin-bottom-20);
+}
+
+.about-text {
+  font-size: var(--text-font-size);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

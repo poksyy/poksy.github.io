@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Project 1",
+    "description": "Descripción breve del proyecto 1.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project1",
+    "technologies": ["Java", "MySQL"]
+  },
+  {
+    "title": "Project 2",
+    "description": "Descripción breve del proyecto 2.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project2",
+    "technologies": ["Python", "Django"]
+  },
+  {
+    "title": "Project 3",
+    "description": "Descripción breve del proyecto 1.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project1",
+    "technologies": ["Java", "MySQL"]
+  },
+  {
+    "title": "Project 4",
+    "description": "Descripción breve del proyecto 1.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project1",
+    "technologies": ["Java", "MySQL"]
+  },
+  {
+    "title": "Project 5",
+    "description": "Descripción breve del proyecto 1.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project1",
+    "technologies": ["Java", "MySQL"]
+  },
+  {
+    "title": "Project 6",
+    "description": "Descripción breve del proyecto 1.",
+    "image": "images/projects/pooshop.jpg",
+    "link": "https://github.com/poksyy/project1",
+    "technologies": ["Java", "MySQL"]
+  }
+]

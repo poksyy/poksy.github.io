@@ -1,0 +1,131 @@
+.profile-picture {
+  margin-right: 30px;
+  width: 200px;
+  height: 200px;
+  border: solid 1px var(--primary-color);
+  border-radius: 100%;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.text-logo1 {
+  text-align: left;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.text-logo2 {
+  text-align: left;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 100%;
+}
+.subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.project-box {
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+.project-box img:first-child {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.project-title {
+  text-align: left;
+  padding: 20px 30px 10px 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 30px 20px 20px;
+  text-align: left;
+}
+
+.project-link {
+  position: relative;
+  display: block;
+}
+
+.project-link img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: filter 0.3s ease;
+}
+
+.project-link:hover img {
+  filter: blur(1px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-link:hover .overlay {
+  opacity: 1;
+}
+
+.technology-icons {
+  padding: 0 10px 20px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tech-icon {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.java-icon {
+  background-color: #f89820;
+}
+
+.mysql-icon {
+  background-color: #00758f;
+}
