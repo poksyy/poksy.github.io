@@ -37,28 +37,54 @@
         <img src="images/profile-picture.jpg" alt="" />
       </div>
       <div class="logo">
-        <p class="text-logo1">Hey,i'm</p>
+        <p class="text-logo1">Hey there!,i'm-</p>
         <img src="images/poksy-bg.png" alt="poksy-logo" class="smaller-image" />
-        <p class="text-logo2">Full-stack developer</p>
+        <p class="text-logo2">Fullstack developer</p>
+        <div class="profile-tags">
+          <a
+            href="https://github.com/poksyy"
+            target="_blank"
+            class="profile-tag github-tag"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pau-carrera/"
+            target="_blank"
+            class="profile-tag linkedin-tag"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="pxcarrera@gmail.com"
+            target="_blank"
+            class="profile-tag mail-tag"
+          >
+            <i class="fas fa-envelope"></i> Mail
+          </a>
+          <a href="cv.pdf" target="_blank" class="profile-tag cv-tag">
+            <i class="fas fa-file-alt"></i> CV
+          </a>
+        </div>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="pages/about.html"
+            <a href="#experience"
+              ><img
+                src="images/nav/experience1.png"
+                alt="media button"
+                onmouseover="changeImage(this, 'images/nav/experience2.png')"
+                onmouseout="changeImage(this, 'images/nav/experience1.png')"
+            /></a>
+          </li>
+          <li>
+            <a href="#about"
               ><img
                 src="images/nav/aboutme1.png"
                 alt="about me button"
                 onmouseover="changeImage(this, 'images/nav/aboutme2.png')"
                 onmouseout="changeImage(this, 'images/nav/aboutme1.png')"
-            /></a>
-          </li>
-          <li>
-            <a href="pages/media.html"
-              ><img
-                src="images/nav/media1.png"
-                alt="media button"
-                onmouseover="changeImage(this, 'images/nav/media2.png')"
-                onmouseout="changeImage(this, 'images/nav/media1.png')"
             /></a>
           </li>
           <li>
@@ -71,7 +97,7 @@
             /></a>
           </li>
           <li>
-            <a href="pages/contact.html"
+            <a href="#contact"
               ><img
                 src="images/nav/contact1.png"
                 alt="contact button"
@@ -82,35 +108,80 @@
         </ul>
       </nav>
     </div>
-    
-    <!-- About Me Section -->
-    <div id="about-me" class="container padding-top-60">
-      <div class="about-content">
-        <h2 class="about-title text-center">About Me</h2>
-        <p class="about-text">
-          Hola, soy [Tu Nombre], un desarrollador full-stack apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia en varias tecnologías como JavaScript, React, Node.js, y más. Mi objetivo es crear aplicaciones que mejoren la experiencia del usuario y ayuden a resolver problemas reales.
-        </p>
-      </div>
-    </div>
-    
 
     <!-- Experience Section -->
-    <div id="experience" class="container">
-
+    <div id="experience" class="content-container">
+      <div class="underline-text">
+        <p class="subtitle">EXPERIENCE</p>
+      </div>
+      <div class="experience-wrapper">
+        <!-- Education Section -->
+        <div class="education">
+          <h2>Education</h2>
+          <ul class="timeline">
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p>University of Technology, 2015 - 2019</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>Master's Degree in Software Engineering</h3>
+                <p>University of Innovation, 2020 - 2022</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Work Experience Section -->
+        <div class="work-experience">
+          <h2>Career</h2>
+          <ul class="timeline">
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>Fullstack Developer</h3>
+                <p>Tech Solutions, 2022 - Present</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>Intern Web Developer</h3>
+                <p>Startup Inc, 2019 - 2020</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Projects Section -->
-    <div id="projects" class="container">
+    <div id="projects" class="content-container">
       <div class="underline-text">
-        <p class="text-logo2 subtitle">PROJECTS</p>
+        <p class="subtitle">PROJECTS</p>
       </div>
       <div class="projects-container" id="projects-container"></div>
     </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="container">
-
+    <!-- About Me Section -->
+    <div id="about-me" class="content-container padding-top-60">
+      <div class="about-content">
+        <h2 class="about-title text-center">About Me</h2>
+        <p class="about-text">
+          Hola, soy [Tu Nombre], un desarrollador full-stack apasionado por la
+          tecnología y la creación de soluciones digitales. Tengo experiencia en
+          varias tecnologías como JavaScript, React, Node.js, y más. Mi objetivo
+          es crear aplicaciones que mejoren la experiencia del usuario y ayuden
+          a resolver problemas reales.
+        </p>
+      </div>
     </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="content-container"></div>
 
     <script src="js/script.js"></script>
   </body>

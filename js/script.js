@@ -31,20 +31,36 @@ fetch('./data/projects.json')
       projectBox.className = 'project-box';
 
       projectBox.innerHTML = `
-        <a href="${project.link}" target="_blank" class="project-link">
-          <img src="${project.image}" alt="${project.title}" />
-          <div class="overlay">
-            <i class="fa-brands fa-github"></i>
-          </div>
-        </a>
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-text">${project.description}</p>
-        <div class="technology-icons">
-          ${project.technologies
-            .map((tech) => `<div class="tech-icon">${tech}</div>`)
-            .join('')}
+      <a href="${project.link}" target="_blank" class="project-link">
+        <img src="${project.image}" alt="${project.title}" />
+        <div class="overlay">
+          <i class="fa-brands fa-github"></i>
         </div>
-      `;
+      </a>
+      <h3 class="project-title">${project.title}</h3>
+      <p class="project-text">${project.description}</p>
+      <div class="technology-icons">
+        ${project.technologies
+          .map((tech) => {
+            // Asignamos una clase específica en función del nombre de la tecnología
+            let techClass = '';
+            if (tech.toLowerCase() === 'java') {
+              techClass = 'java-icon';
+            } else if (tech.toLowerCase() === 'mysql') {
+              techClass = 'mysql-icon';
+            } else if (tech.toLowerCase() === 'php') {
+              techClass = 'php-icon';
+            } else if (tech.toLowerCase() === 'javascript') {
+              techClass = 'js-icon';
+            } else if (tech.toLowerCase() === 'spring boot') {
+              techClass = 'springboot-icon';
+            }
+            return `<div class="tech-icon ${techClass}">${tech}</div>`;
+          })
+          .join('')}
+      </div>
+    `;
+    
       container.appendChild(projectBox);
     });
   })

@@ -1,44 +1,23 @@
 [
   {
-    "title": "Project 1",
-    "description": "Descripción breve del proyecto 1.",
+    "title": "Shop Management System",
+    "description": " Java application designed as a class assignment to help us as students learn new Java concepts from scratch. It simulates real-world shop management functionalities, including inventory management, sales tracking, and cash flow monitoring.",
     "image": "images/projects/pooshop.jpg",
     "link": "https://github.com/poksyy/project1",
     "technologies": ["Java", "MySQL"]
   },
   {
-    "title": "Project 2",
-    "description": "Descripción breve del proyecto 2.",
-    "image": "images/projects/pooshop.jpg",
-    "link": "https://github.com/poksyy/project2",
-    "technologies": ["Python", "Django"]
+    "title": "FlashFoods",
+    "description": "Flashfoods is a web app created by three developers that helps users find nearby fast food deals. It includes an interactive map, user profiles, a wishlist, and real-time alerts for new offers.",
+    "image": "images/projects/flashfoods.jpg",
+    "link": "https://github.com/krschan/flashfoods",
+    "technologies": ["PHP", "JavaScript", "MySQL"]
   },
   {
-    "title": "Project 3",
-    "description": "Descripción breve del proyecto 1.",
-    "image": "images/projects/pooshop.jpg",
-    "link": "https://github.com/poksyy/project1",
-    "technologies": ["Java", "MySQL"]
-  },
-  {
-    "title": "Project 4",
-    "description": "Descripción breve del proyecto 1.",
-    "image": "images/projects/pooshop.jpg",
-    "link": "https://github.com/poksyy/project1",
-    "technologies": ["Java", "MySQL"]
-  },
-  {
-    "title": "Project 5",
-    "description": "Descripción breve del proyecto 1.",
-    "image": "images/projects/pooshop.jpg",
-    "link": "https://github.com/poksyy/project1",
-    "technologies": ["Java", "MySQL"]
-  },
-  {
-    "title": "Project 6",
-    "description": "Descripción breve del proyecto 1.",
-    "image": "images/projects/pooshop.jpg",
-    "link": "https://github.com/poksyy/project1",
-    "technologies": ["Java", "MySQL"]
+    "title": "Hospital Backend Project",
+    "description": "Backend development for a Hospital Management System as part of a class project. It is implemented using Java and Hibernate, following the first phase of the course where all teams build a backend for a hospital.",
+    "image": "images/projects/hospital.jpg",
+    "link": "https://github.com/poksyy/hospital-project-backend",
+    "technologies": ["Java", "MySQL", "Spring boot"]
   }
 ]

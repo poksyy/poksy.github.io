@@ -1,5 +1,8 @@
 /* Base */
 @import url('base/reset.css');
+
+/* Utilities */
+@import url('utilities/helpers.css');
 @import url('utilities/variable.css');
 
 /* Layout */
@@ -11,6 +14,6 @@
 @import url('components/navigation.css');
 @import url('components/profile.css');
 @import url('components/projects.css');
+@import url('components/experience.css');
 
-/* Utilities */
-@import url('utilities/helpers.css');
+
