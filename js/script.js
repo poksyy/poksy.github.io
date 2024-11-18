@@ -12,12 +12,38 @@ function setLanguage(language){
 }
 
 
+// Smooth scroll for About section
+document.querySelector('a[href="#about"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#about').scrollIntoView({
+    behavior: 'smooth',
+  });
+});
+
+// Smooth scroll for Contact section
+document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+    behavior: 'smooth',
+  });
+});
+
+// Smooth scroll for Experience section
+document.querySelector('a[href="#experience"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#experience').scrollIntoView({
+    behavior: 'smooth',
+  });
+});
+
+// Smooth scroll for Projects section
 document.querySelector('a[href="#projects"]').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('#projects').scrollIntoView({
     behavior: 'smooth',
   });
 });
+
 
 // Projects json connection and html
 fetch('./data/projects.json')

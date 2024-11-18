@@ -70,21 +70,21 @@
       <nav>
         <ul>
           <li>
-            <a href="#experience"
-              ><img
-                src="images/nav/experience1.png"
-                alt="media button"
-                onmouseover="changeImage(this, 'images/nav/experience2.png')"
-                onmouseout="changeImage(this, 'images/nav/experience1.png')"
-            /></a>
-          </li>
-          <li>
             <a href="#about"
               ><img
                 src="images/nav/aboutme1.png"
                 alt="about me button"
                 onmouseover="changeImage(this, 'images/nav/aboutme2.png')"
                 onmouseout="changeImage(this, 'images/nav/aboutme1.png')"
+            /></a>
+          </li>
+          <li>
+            <a href="#experience"
+              ><img
+                src="images/nav/experience1.png"
+                alt="media button"
+                onmouseover="changeImage(this, 'images/nav/experience2.png')"
+                onmouseout="changeImage(this, 'images/nav/experience1.png')"
             /></a>
           </li>
           <li>
@@ -109,6 +109,25 @@
       </nav>
     </div>
 
+    
+<!-- About Me Section -->
+<div id="about" class="content-container">
+    <div class="underline-text">
+      <h2 class="subtitle">ABOUT ME</h2>
+    </div>
+    <div class="about-wrapper">
+      <p class="about-text">
+        Hello! I’m <span class="highlight">Pau Xavier Carrera Nonales</span>, a <span class="highlight">full-stack developer</span> passionate about <span class="highlight">technology</span> and developing applications that make a difference. My experience covers various technologies such as <span class="highlight">Java</span>, <span class="highlight">JavaScript</span>, <span class="highlight">Flutter</span>, <span class="highlight">React</span>, <span class="highlight">Node.js</span>, and more. I strive to create applications that are not only functional but also intuitive, user-centered, and capable of solving real-world problems efficiently and at scale.
+        <br/><br/>
+        My approach combines <span class="highlight">creativity</span> with <span class="highlight">logic</span>, always seeking continuous improvement and effective solutions. I’m ready to take on new challenges and contribute to projects that transform the way people interact with technology!        
+      </p>
+      <div class="about-image-wrapper">
+        <img src="images/profile-picture.jpg" alt="Profile Picture" class="about-image" />
+      </div>
+    </div>
+</div>
+
+
     <!-- Experience Section -->
     <div id="experience" class="content-container">
       <div class="underline-text">
@@ -122,15 +141,22 @@
             <li>
               <span class="dot"></span>
               <div class="timeline-content">
-                <h3>Bachelor's Degree in Computer Science</h3>
-                <p>University of Technology, 2015 - 2019</p>
+                <h3><img src="images/logos/stucom.png" alt="Icon" class="timeline-icon">Advanced vocational training in application development</h3>
+                <p>Stucom Pelai Barcelona, 2023 - 2025</p>
               </div>
             </li>
             <li>
               <span class="dot"></span>
               <div class="timeline-content">
-                <h3>Master's Degree in Software Engineering</h3>
-                <p>University of Innovation, 2020 - 2022</p>
+                <h3><img src="images/logos/epsa.png" alt="Icon" class="timeline-icon">Technological Baccalaureate</h3>
+                <p>Escola Pia Sant Antoni, 2018 - 2020</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>...</h3>
+                <p>...</p>
               </div>
             </li>
           </ul>
@@ -142,15 +168,22 @@
             <li>
               <span class="dot"></span>
               <div class="timeline-content">
-                <h3>Fullstack Developer</h3>
-                <p>Tech Solutions, 2022 - Present</p>
+                <h3><img src="images/logos/flashfoods.png" alt="Icon" class="timeline-icon"> Fullstack Web Developer</h3>
+                <p>Transversal project FlashFoods Stucom, 2023 - 2024</p>
               </div>
             </li>
             <li>
               <span class="dot"></span>
               <div class="timeline-content">
-                <h3>Intern Web Developer</h3>
-                <p>Startup Inc, 2019 - 2020</p>
+                <h3><img src="images/logos/wincom.png" alt="Icon" class="timeline-icon">Intership Developer</h3>
+                <p>Wincom, 2024</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div class="timeline-content">
+                <h3>...</h3>
+                <p>...</p>
               </div>
             </li>
           </ul>
@@ -166,22 +199,27 @@
       <div class="projects-container" id="projects-container"></div>
     </div>
 
-    <!-- About Me Section -->
-    <div id="about-me" class="content-container padding-top-60">
-      <div class="about-content">
-        <h2 class="about-title text-center">About Me</h2>
-        <p class="about-text">
-          Hola, soy [Tu Nombre], un desarrollador full-stack apasionado por la
-          tecnología y la creación de soluciones digitales. Tengo experiencia en
-          varias tecnologías como JavaScript, React, Node.js, y más. Mi objetivo
-          es crear aplicaciones que mejoren la experiencia del usuario y ayuden
-          a resolver problemas reales.
-        </p>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="content-container"></div>
+<!-- Contact Section -->
+<div id="contact" class="content-container">
+  <div class="contact-form-container">
+      <h2 class="subtitle">Contact Me</h2>
+      <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+  </div>
+</div>
 
     <script src="js/script.js"></script>
   </body>

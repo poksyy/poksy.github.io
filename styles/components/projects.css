@@ -1,3 +1,7 @@
+.content-container#projects {
+  padding-top: 50px;
+}
+
 .project-box {
   display: flex; 
   flex-direction: column; 

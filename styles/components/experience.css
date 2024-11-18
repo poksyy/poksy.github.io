@@ -1,9 +1,14 @@
+.content-container#experience {
+  padding-top: 60px;
+}
+
 .experience-wrapper {
-  padding: 3rem 0 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   gap: 50px;
 }
@@ -14,7 +19,7 @@
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
 }
@@ -38,7 +43,7 @@ h2 {
 
 .timeline li {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .timeline li:last-child {
@@ -57,18 +62,33 @@ h2 {
 
 .timeline-content {
   background-color: #f9f9f9;
-  padding: 10px 15px;
+  padding: 30px 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align content to start */
+  gap: 20px; /* Add space between image and text */
 }
 
 .timeline-content h3 {
-  margin: 0 0 5px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-  font-weight: bold;
+  flex-grow: 1; /* Allows the text to expand and take more space */
+}
+
+.timeline-content h3 img.timeline-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px; /* Space between image and text */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;
 }
 
 .timeline-content p {
+  text-align: right;
   margin: 0;
   font-size: 0.9rem;
   color: #555;
