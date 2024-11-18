@@ -69,3 +69,35 @@
 .cv-tag {
   background-color: #4caf50;
 }
+
+.arrow-decoration {
+  position: absolute;
+  bottom: -250px; /* Ajusta la distancia de la flecha respecto al borde inferior */
+  left: -180px; /* Ajusta la distancia de la flecha respecto al borde izquierdo */
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+
+/* Contenedor de la sección About para establecer el contexto relativo */
+.about-wrapper {
+  position: relative; /* Necesario para posicionar la flecha con respecto a este contenedor */
+}
+
+.sign1-decoration {
+  position: absolute;
+  bottom: 250px; /* Ajusta la distancia de la flecha respecto al borde inferior */
+  left: 860px; /* Ajusta la distancia de la flecha respecto al borde izquierdo */
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+
+.sign2-decoration {
+  position: absolute;
+  bottom: -250px; /* Ajusta la distancia de la flecha respecto al borde inferior */
+  left: 350px; /* Ajusta la distancia de la flecha respecto al borde izquierdo */
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
